@@ -1,0 +1,2 @@
+$item modify entity @s weapon.mainhand {"function":"set_components","components":{"minecraft:damage":$(cooldown)}}
+$item modify entity @s weapon.mainhand {"function":"set_components","components":{"minecraft:max_damage":$(cooldown)}}

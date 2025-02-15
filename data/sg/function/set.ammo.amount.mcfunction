@@ -1,0 +1,2 @@
+item modify entity @s weapon.mainhand {"function":"minecraft:copy_custom_data","source":{"type":"storage","source":"k.temp:temp"},"ops":[{"op":"replace","source":"value","target":"\"sg.Gun\".loadedAmmo"}]}
+$item modify entity @s weapon.mainhand {"function":"set_components","components":{"minecraft:lore":["[{\"text\":\"Ammo: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"$(value)\"}]"]}}

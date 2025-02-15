@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "trigger":{
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "predicates": {
+                        "minecraft:custom_data":{
+                            "sg.Gun":{}
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "sg:fire.gun"
+    }
+}

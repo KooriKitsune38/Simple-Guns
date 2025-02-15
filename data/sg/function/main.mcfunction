@@ -1,0 +1,1 @@
+execute as @a[nbt={SelectedItem:{components:{"minecraft:custom_data":{sg.Gun:{}}}}}] unless data entity @s SelectedItem.components{"minecraft:damage":0} run function sg:calc.cooldown
