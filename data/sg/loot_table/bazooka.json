@@ -18,7 +18,7 @@
                                 "minecraft:custom_data":{
                                     "sg.Gun":{
                                         "rayDistance":20,
-                                        "recoilAngle":3,
+                                        "recoilAngle":20,
                                         "maxAmmo":3,
                                         "loadedAmmo":0,
                                         "ammoUsage":3,
