@@ -17,11 +17,12 @@ function sg:activate.cooldown with entity @s SelectedItem.components."minecraft:
 #> Instantiate Raycast
 execute store result score .max k.Values run data get entity @s SelectedItem.components."minecraft:custom_data"."sg.Gun".rayDistance
 data modify storage k.temp:temp gunInfo set from entity @s SelectedItem.components."minecraft:custom_data"."sg.Gun"
-function sg:recoil with entity @s SelectedItem.components."minecraft:custom_data"."sg.Gun"
 
 tag @s add .temp
 execute anchored eyes positioned ^ ^ ^.5 run function sg:raycast
 tag @s remove .temp
+
+function sg:recoil with entity @s SelectedItem.components."minecraft:custom_data"."sg.Gun"
 
 #> Remove Bullet
 execute store result score .temp k.Values run data get entity @s SelectedItem.components."minecraft:custom_data"."sg.Gun".loadedAmmo
