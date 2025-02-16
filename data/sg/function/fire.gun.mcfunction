@@ -31,5 +31,5 @@ execute store result storage k.temp:temp value byte 1 run scoreboard players get
 function sg:set.ammo.amount with storage k.temp:temp
 
 # Sounds
-playsound block.stone.break player @a ~ ~ ~ 2 1.3
-playsound minecraft:block.end_gateway.spawn player @a ~ ~ ~ 1 2
+execute unless data entity @s SelectedItem.components."minecraft:custom_data"."sg.Gun".sound run return run function sg:def.shoot.sound
+function sg:custom.shoot.sound with entity @s SelectedItem.components."minecraft:custom_data"."sg.Gun"
