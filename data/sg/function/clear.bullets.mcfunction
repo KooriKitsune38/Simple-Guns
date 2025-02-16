@@ -1,0 +1,1 @@
+$clear @s iron_nugget[custom_data~{sg.Bullet:true}] $(value)

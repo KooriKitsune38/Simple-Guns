@@ -3,7 +3,10 @@ advancement revoke @s only sg:used.gun
 execute unless data entity @s SelectedItem.components{"minecraft:damage":0} run return fail
 
 # check if ammo or not
-execute if predicate sg:no_ammo run return run function sg:reload.gun with entity @s SelectedItem.components."minecraft:custom_data"."sg.Gun"
+execute store result score .current k.Values run data get entity @s SelectedItem.components."minecraft:custom_data"."sg.Gun".loadedAmmo
+execute store result score .usage k.Values run data get entity @s SelectedItem.components."minecraft:custom_data"."sg.Gun".ammoUsage
+
+execute if score .usage k.Values > .current k.Values run return run function sg:reload.gun with entity @s SelectedItem.components."minecraft:custom_data"."sg.Gun"
 
 # Shoot
 execute if predicate sg:no_ammo run return fail
