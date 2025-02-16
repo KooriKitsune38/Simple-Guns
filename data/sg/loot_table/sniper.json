@@ -6,30 +6,29 @@
             "entries": [
                 {
                     "type":"item",
-                    "name":"cookie",
+                    "name":"prismarine_shard",
                     "functions": [
                         {
                             "function": "set_components",
                             "components": {
-                                "minecraft:custom_name": "{\"text\":\"Uwu\",\"italic\":false,\"color\":\"white\"}",
+                                "minecraft:custom_name": "{\"text\":\"Sniper\",\"italic\":false,\"color\":\"white\"}",
                                 "minecraft:lore":[
                                     "[{\"text\":\"Ammo: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"0/6\"}]"
                                 ],
                                 "minecraft:custom_data":{
                                     "sg.Gun":{
-                                        "rayDistance":40,
-                                        "recoilAngle":1,
-                                        "maxAmmo":10,
+                                        "rayDistance":160,
+                                        "recoilAngle":15,
+                                        "maxAmmo":2,
                                         "loadedAmmo":0,
-                                        "ammoUsage":1,
-                                        "damage":10,
-                                        "damage_type":"out_of_world",
-                                        "cooldown":5,
+                                        "ammoUsage":2,
+                                        "damage":13,
+                                        "damage_type":"mob_projectile",
+                                        "cooldown":25,
                                         "explosion":{
                                             "active":false,
                                             "can_damage_ground":false
-                                        },
-                                        "sound":"minecraft:entity.cat.ambient"
+                                        }
                                     }
                                 },
                                 "minecraft:damage":0,

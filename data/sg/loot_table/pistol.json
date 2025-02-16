@@ -17,12 +17,12 @@
                                 ],
                                 "minecraft:custom_data":{
                                     "sg.Gun":{
-                                        "rayDistance":20,
+                                        "rayDistance":40,
                                         "recoilAngle":3,
                                         "maxAmmo":6,
                                         "loadedAmmo":0,
                                         "ammoUsage":1,
-                                        "damage":2,
+                                        "damage":6,
                                         "damage_type":"mob_projectile",
                                         "cooldown":10,
                                         "explosion":{
