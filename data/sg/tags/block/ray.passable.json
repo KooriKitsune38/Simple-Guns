@@ -68,6 +68,11 @@
         "weeping_vines",
         "weeping_vines_plant",
         "#slabs",
-        "#campfires"
+        "#campfires",
+        "#wool_carpets",
+        "moss_carpet",
+        "lantern",
+        "soul_lantern",
+        "sea_pickle"
       ]      
 }
