@@ -73,6 +73,10 @@
         "moss_carpet",
         "lantern",
         "soul_lantern",
-        "sea_pickle"
+        "sea_pickle",
+        "#candles",
+        "cake",
+        "#doors",
+        "#trapdoors"
       ]      
 }
